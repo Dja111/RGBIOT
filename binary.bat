@@ -1,0 +1,1 @@
+avr-objcopy -Oihex -R .eeprom p.elf p.hex

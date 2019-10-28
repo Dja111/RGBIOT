@@ -1,0 +1,1 @@
+avr-gcc.exe -g -Os -mmcu=atmega32u4 -DF_CPU=8000000UL src/main.c src/neo_pixel.c src/PinPortMapping.c src/Timer.c -Wall -o p.elf

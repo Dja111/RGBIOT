@@ -1,0 +1,18 @@
+test --cpu=k8
+test --crosstool_top=@bazel_tools//tools/cpp:toolchain
+test --platforms @bazel_tools//platforms:host_platform
+test --test_output=errors
+
+build --crosstool_top=@AvrToolchain//:avr-gcc
+build --host_crosstool_top=@bazel_tools//tools/cpp:toolchain
+build --cpu=avr
+build --platforms @AvrToolchain//platforms:Motherboard
+build -c opt
+
+build:elastic --platforms @AvrToolchain//platforms:ElasticNode
+
+
+build:native --cpu=k8
+build:native --crosstool_top=@bazel_tools//tools/cpp:toolchain
+build:native --platforms @bazel_tools//platforms:host_platform
+

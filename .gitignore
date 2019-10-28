@@ -1,0 +1,9 @@
+*.o
+*.hex
+.clwb/
+/bazel-testlogs/
+/bazel-bin/
+/bazel-embedded/
+/bazel-genfiles/
+/bazel-out/
+/bazel-embedded/
